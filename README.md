@@ -2,7 +2,8 @@
 
 ### Dependencies
 
-Go 1.9.1
+(Go 1.9.1)[https://golang.org/doc/install]
+(Dep)[https://github.com/golang/dep#dep]
 
 ### Development
 
@@ -16,7 +17,7 @@ $ git clone git@github.com:effortless-technologies/et-connect-api.git
 `cd` into project root and get dependencies:
 ```
 $ cd et-connect-api
-$ go get
+$ dep ensure
 ```
 
 ### Build
