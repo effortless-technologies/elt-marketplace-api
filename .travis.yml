@@ -22,6 +22,8 @@ before_install:
   - gcloud --quiet components update beta
   - go get -u github.com/golang/dep/cmd/dep
   - dep ensure
+  - go get -u github.com/360EntSecGroup-Skylar/goreporter
+  - mkdir reports
 
 # TODO: implement code quality check
 # script:
@@ -36,6 +38,7 @@ install:
 # TODO; implement test coverage check
 script:
   - echo "skip tests"
+  - goreporter -p ./ -r ./reports -e -f text
 
 before_deploy:
   - gcloud --quiet components update kubectl
