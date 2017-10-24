@@ -68,3 +68,5 @@ $ curl http://localhost:1323
 ## Testing
 
 ## Stage
+
+[stage](http://104.154.205.37/)
