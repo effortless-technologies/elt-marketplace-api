@@ -49,6 +49,6 @@ deploy:
     skip_cleanup: true
     on:
       branch: pipeline
-      
+
 notifications:
   slack: effortlessrental:W1T5KZKXVJXg9WraZTGx0VDh
